@@ -1,6 +1,5 @@
 Notes for the finance project
-1. Select a solid layout to deploy
-2. Change colors and hovers 
-3. Add a working nav bar 
-4. Create a footer
-5. Add a carousel 
+1. Fix the width of the accordian 
+2. Add a correct footer 
+3. Change what is inside of each accordian 
+4. Final phase and push to github, paste to the class page.
