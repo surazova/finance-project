@@ -2,53 +2,47 @@
 <html>
 
 <head>
-  <title>FS</title>
+  <title>Finance Solutions</title>
   <link href="style2.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-  <!--Change the icon-->
-  <link rel=icon href="https://bit.ly/ui-favicon" sizes="16x16" type="image/png">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> <!-- Change the font themes-->
+  <!--Change the icon for the page (favicon)-->
+  <!--<link rel=icon href="https://bit.ly/ui-favicon" sizes="16x16" type="image/png">-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-
+  
+    
 </head>
 
 <body>
-
+  
   <div class="pos-f-t">
     <div class="collapse" id="navbarToggleExternalContent">
       <div class="bg-dark p-4">
-        <div class="col-sm">
-          <img class="logo" src="https://bit.ly/2O6jBfe" alt="Finance solutions logo" />
-        </div>
+        <img class="logo" src="https://bit.ly/2O6jBfe" alt="Finance solutions logo" /><br>
         <h4 class="text-white">Finance Solutions</h4>
-        <span class="text-muted">About</span> <br>
-        <span class="text-muted">Dashboard</span> <br>
-        <a href="https://www.facebook.com" target="_blank">
-              <span class="text-muted">Facebook</span><br>
-          <a href ="https://www.twitter.com" target="_blank">
-             <span class="text-muted">Twitter</span><br>
-          <a href ="https://www.google.com" target="_blank">
-             <span class="text-muted">Help</span><br>
-        <input type="text" placeholder="Search" />
-        </div>
+         <a href="#About"><span class="text-muted">About</span></a><br>
+         <a href="#Dashboard"><span class="text-muted">Dashboard</span></a><br>
+         <a href="#News"><span class="text-muted">Portfolio News</span></a><br>
+         <span class="text-muted" href="https://www.facebook.com" target="_blank">Facebook</span><br>
+         <span class="text-muted" href ="https://www.twitter.com" target="_blank">Twitter</span><br>
+         <span class="text-muted" href ="https://www.google.com" target="_blank">Help</span><br>
+         <input class="text-muted" type="text" placeholder="Search" /><br> 
+       </div>
     </div>
-  </div>
   <nav class="navbar navbar-dark bg-dark">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   </nav>
 </div>
+
 <!--Fix the google _target blank-->
 
-  
-  <!-- Carousel starts below -->
-
-  <br>
+<!-- Carousel starts below -->
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -75,122 +69,215 @@
         <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
 			<span class="carousel-control-next-icon" aria-hidden="true"></span>
 			<span class="sr-only">Next</span>
-		</a>
+	    	</a>
       </div>
+           
+           
+            <ul id="client-list-ul">
+        <li>
+         <a id=About style= "text-align: center;"> <h1>About</h1></a>
+          <p>Finance Solutions is here to optomize your stock data and makes it easier to view, invest, and track all of your stocks to a great investing future.</p>
+        </li>
+      </ul>
 
-      <!-- Accordian--->
-      <br>
-      <div class="accordion" id="accordionExample">
-        
+<!-- Accordian--->
+      <div class="accordion" id="accordionExample" style="padding: 50px;">
+<!--Add a title: Dashboard-->
         <div class="card">
           <div class="card-header" id="headingOne">
+            <a id="Dashboard" style= "text-align: center;"><h1>Dashboard</h1> </a>
             <h5 class="mb-0">
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-    
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
           <div class="ticker hvr-float">FEYE</div>
-  
-     
-  <!-- Inside of the accordian drop downs:
-  Symbol
-  Last Price
-  Change
-  % Chg	
-  Currency
-  Market
-  Time
-  Volume
-  Shares
-  Avg Vol (3m)
-  Day Range	
-  52-Wk Range
-  Day Chart
-  Market Cap
-  Buy/Sell -->
-
-
+          <div class="price">$14.96</div>
 
 <!-- Make the accordian smaller in width--> 
-
         </button>
-            </h5>
+           </h5>
           </div>
-
           <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
             <div class="card-body">
               <ul id="client-list-ul">
-                <li>
-
-                  <div class="client">FireEye</div>
-                  <div class="price">$14.96</div>
-                  <li>Last Price</li>
-                  <li>Change</li>
-                  <li>Percent Change</li>
-                  <li>Currency</li>
-                  <li>Market</li>
-                  <li>Time</li>
-                  <li>Volume</li>
-                  <li>Shares</li>
-                  <li>Avg Vol (3m)</li>
-                  <li>Day Range</li>
-                  <li>52-Wk Range</li>
-                  <li>Day Chart</li>
-                  <li>Market Cap</li>
-                  <li>Buy/Sell</li>
-                  
-                </li>
-
-              </ul>
               
+                  <div class="client">FireEye</div>
+                       <div class="price">$15.12</div>
+                <li>Last Price</li>
+                
+                       <div class="price">+0.9</div>
+                  <li>Change</li> 
+                                         <div class="price">+1.07%</div>
+
+                  <li>Percent Change</li> 
+                                         <div class="price">USD</div>
+
+                  <li>Currency</li> 
+                                         <div class="price">1:57 PM EDT</div>
+
+                  <li>Market Time</li> 
+                                         <div class="price">1.15M</div>
+ 
+                  <li>Volume</li> 
+                                         <div class="price"> 3.19M</div>
+
+                  <li>Avg Vol (3m)</li>
+                                         <div class="price">$13.40</div>
+
+                  <li>52-Wk Low</li> 
+                                         <div class="price">$19.36</div>
+
+                  <li>52-Wk High</li> 
+                                         <div class="price">2.87B</div>
+
+               
+                  <li>Market Cap</li> 
+            <div class="price"> <a href="https://www.nasdaq.com" target="_blank">Trade</div> </a>
+                <li>Buy/Sell</li> 
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-
+        
         <div class="card">
           <div class="card-header" id="headingTwo">
             <h5 class="mb-0">
               <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-         
              <div class="ticker hvr-float">ADBE</div>
+                       <div class="price">$254.11</div>
+
         </button>
             </h5>
           </div>
-
           <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
             <div class="card-body">
-              Test
+              <ul id="client-list-ul">
+          <div class="client">Adobe</div>
+                <div class="price">$254.11</div>
+                <li>Last Price</li> 
+                <div class="price">-0.56</div>
+                <li>Change</li> 
+                <div class="price">-0.18%</div>
+                <li>Percent Change</li> 
+                  <div class="price">USD</div>
+                <li>Currency</li> 
+                  <div class="price">1:57 PM EDT</div>
+                <li>Market Time</li> 
+                  <div class="price">885.72K</div>
+                <li>Volume</li> 
+              
+                  <div class="price"> 2.88M</div>
+                <li>Avg Vol (3m)</li>
+                  <div class="price">$143.95</div>
+              <li>52-Wk Low</li> 
+                <div class="price"> $263.83</div>
+                  <li>52-Wk High</li>
+            
+                  <div class="price">124.43B</div>
+                <li>Market Cap</li> 
+          
+               <div class="price"> <a href="https://www.nasdaq.com" target="_blank">Trade</div> </a>
+                <li>Buy/Sell</li> 
+       
+               
+          
             </div>
           </div>
         </div>
+        
         <div class="card">
           <div class="card-header" id="headingThree">
             <h5 class="mb-0">
               <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-       
            <div class="ticker hvr-float">MKSI</div>
+                     <div class="price">$95.20</div>
+
         </button>
             </h5>
           </div>
-
           <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
             <div class="card-body">
-              Test
+              <ul id="client-list-ul">
+          <div class="client">MKSI Instruments</div>
+                <div class="price">$95.20</div>
+                <li>Last Price</li> 
+                
+                <div class="price">+0.55</div> 
+                <li>Change</li>
+                
+                <div class="price">+0.58%</div>
+                <li>Percent Change</li> 
+                
+                <div class="price">USD</div>
+                <li>Currency</li> 
+                
+                <div class="price">1:57 PM EDT</div>
+                <li>Market Time</li> 
+                
+                <div class="price">174.25k</div>
+                <li>Volume</li> 
+                
+                <div class="price">174.25k</div>
+                <li>Avg Vol (3m)</li> 
+                
+                <div class="price">$77.05 </div>
+                <li>52-Wk Low</li> 
+                
+                <div class="price">$128.28</div>
+                <li>52-Wk High</li> 
+      
+                <div class="price">5.21B</div>
+                <li>Market Cap</li>
+                
+                <div class="price"> <a href="https://www.nasdaq.com" target="_blank">Trade</div> </a>
+                <li>Buy/Sell</li> 
             </div>
           </div>
         </div>
-
+        
         <div class="card">
           <div class="card-header" id="headingFour">
             <h5 class="mb-0">
               <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          <div class="ticker hvr-float">AAPL</div>
+                    <div class="price">$208.88</div>
 
-    <div class="ticker hvr-float">AAPL</div>
-    </button>
+          </button>
             </h5>
           </div>
-
           <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
             <div class="card-body">
-              Test
+              <ul id="client-list-ul">
+          <div class="client">Apple</div>
+                <div class="price">$208.88</div>
+                <li>Last Price</li>
+                <div class="price">+0.84</div>
+                <li>Change</li> 
+                <div class="price">+0.41%</div>
+                <li>Percent Change</li> 
+                                <div class="price">USD</div>
+
+                <li>Currency</li> 
+                                <div class="price"> 1:57 PM EDT</div>
+
+                <li>Market Time</li>
+                                <div class="price">25.40M</div>
+
+                <li>Volume</li> 
+                                <div class="price">23.68M</div>
+
+          
+                <li>Avg Vol (3m)</li> 
+                                <div class="price">$149.16</div>
+
+                  <li>52-Wk Low</li> 
+                                  <div class="price">$209.17</div>
+
+                  <li>52-Wk High</li> 
+                        <div class="price">1.01T</div>
+
+                <li>Market Cap</li> 
+              <div class="price"> <a href="https://www.nasdaq.com" target="_blank">Trade</div> </a>
+                <li>Buy/Sell</li> 
             </div>
           </div>
         </div>
@@ -199,15 +286,48 @@
           <div class="card-header" id="headingFive">
             <h5 class="mb-0">
               <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-    <div class="ticker hvr-float">TSLA</div>
+                <div class="ticker hvr-float">TSLA</div>
+                          <div class="price">$341.99</div>
 
-        </button>
+                </button>
             </h5>
           </div>
-
           <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
             <div class="card-body">
-              Test
+              <ul id="client-list-ul">
+          <div class="client">Tesla</div>
+                <div class="price">$341.99</div>
+                <li>Last Price</li> 
+                                        <div class="price">+1.08</div>
+
+                <li>Change</li> 
+                                                        <div class="price">+0.52%</div>
+
+                <li>Percent Change</li> 
+                                                        <div class="price">USD</div>
+
+                <li>Currency</li> 
+                                                        <div class="price">1:57 PM EDT</div>
+
+                <li>Market Time</li> 
+                                                        <div class="price">25.40M</div>
+
+                <li>Volume</li> 
+                                                        <div class="price">23.68M</div>
+
+                <li>Avg Vol (3m)</li> 
+                                                        <div class="price">$149.16</div>
+
+               <li>52-Wk Low</li> 
+                                                       <div class="price"> $209.17</div>
+
+                  <li>52-Wk High</li>
+                                                          <div class="price">58.07B</div>
+
+            
+                <li>Market Cap</li> 
+             <div class="price"> <a href="https://www.nasdaq.com" target="_blank">Trade</div> </a>
+                <li>Buy/Sell</li> 
             </div>
           </div>
         </div>
@@ -216,16 +336,47 @@
           <div class="card-header" id="headingSix">
             <h5 class="mb-0">
               <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            <div class="ticker hvr-float">ORCLE</div>
+                      <div class="price">$48.67</div>
 
-    <div class="ticker hvr-float">ORCLE</div>
-    
-        </button>
+            </button>
             </h5>
           </div>
-
           <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
             <div class="card-body">
-              Test
+              <ul id="client-list-ul">
+          <div class="client">Oracle</div>
+                <div class="price">$48.67</div>
+                <li>Last Price</li> 
+               <div class="price"> +0.20</div>
+                <li>Change</li>
+                               <div class="price">+0.41%</div>
+
+                <li>Percent Change</li> 
+                               <div class="price"> USD</div>
+
+                <li>Currency</li>
+                               <div class="price">1:57 PM EDT</div>
+
+                <li>Market Time</li> 
+                               <div class="price">13.53M</div>
+
+                <li>Volume</li> 
+                               <div class="price">18.29M</div>
+
+                <li>Avg Vol (3m)</li> 
+                               <div class="price"> $42.57</div>
+
+                 <li>52-Wk Low</li>
+                                <div class="price"> $53.48</div>
+
+                  <li>52-Wk High</li>
+                                 <div class="price">193.76B</div>
+
+                <li>Market Cap</li> 
+
+<div class="price"> <a href="https://www.nasdaq.com" target="_blank">Trade</div> </a>
+                <li>Buy/Sell</li> 
             </div>
           </div>
         </div>
@@ -234,15 +385,49 @@
           <div class="card-header" id="headingSeven">
             <h5 class="mb-0">
               <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-    <div class="ticker hvr-float">AMZN</div>
-        </button>
-            </h5>
-          </div>
+              <div class="ticker hvr-float">AMZN</div>
+                        <div class="price">$1,847.75</div>
 
+            </button>
+            </h5>
+            </div>
           <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
             <div class="card-body">
-              Test
-            </div>
+              <ul id="client-list-ul">
+          <div class="client">Amazon</div>
+                <div class="price">$1,847.75</div>
+                <li>Last Price</li> 
+                               <div class="price">+24.46</div>
+
+                <li>Change</li> 
+                               <div class="price">+1.34%</div>
+
+                <li>Percent Change</li> 
+                               <div class="price">USD</div>
+
+                <li>Currency</li> 
+                               <div class="price">1:57 PM EDT</div>
+
+                <li>Market Time</li> 
+                               <div class="price">3.39M</div>
+
+                <li>Volume</li> 
+                               <div class="price">3.97M</div>
+
+                <li>Avg Vol (3m)</li> 
+                               <div class="price">$931.75</div>
+
+                 <li>52-Wk Low</li> 
+                                <div class="price">$1,880.05</div>
+
+                  <li>52-Wk High</li> 
+                                 <div class="price">896.58B</div>
+
+                <li>Market Cap</li> 
+                           
+
+<div class="price"> <a href="https://www.nasdaq.com" target="_blank">Trade</div> </a>
+                <li>Buy/Sell</li>             </div>
           </div>
         </div>
 
@@ -250,16 +435,47 @@
           <div class="card-header" id="headingEight">
             <h5 class="mb-0">
               <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-    <div class="ticker hvr-float">MSFT</div>
-    
-    </button>
+              <div class="ticker hvr-float">MSFT</div>
+                        <div class="price">$108.13</div>
+
+              </button>
             </h5>
           </div>
-
           <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
             <div class="card-body">
-              Test
-            </div>
+              <ul id="client-list-ul">
+          <div class="client">Microsoft</div>
+                <div class="price">$108.13</div>
+                <li>Last Price</li> 
+                               <div class="price"> +0.09    </div>
+
+                <li>Change</li>          
+                <div class="price">+0.08%</div>
+
+                <li>Percent Change</li> 
+                               <div class="price"> USD</div>
+
+                <li>Currency</li>
+                               <div class="price"> 1:57 PM EDT</div>
+
+                <li>Market Time</li>
+                               <div class="price">20.25M</div>
+
+                <li>Volume</li> 
+                               <div class="price">25.89M</div>
+
+                <li>Avg Vol (3m)</li> 
+                               <div class="price">$71.28</div>
+
+               <li>52-Wk Low</li> 
+                              <div class="price"> $111.15</div>
+
+                  <li>52-Wk High</li>
+                                 <div class="price">830.78B</div>
+
+                <li>Market Cap</li> 
+<div class="price"> <a href="https://www.nasdaq.com" target="_blank">Trade</div> </a>
+                <li>Buy/Sell</li>             </div>
           </div>
         </div>
 
@@ -267,15 +483,47 @@
           <div class="card-header" id="headingNine">
             <h5 class="mb-0">
               <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-    <div class="ticker hvr-float">SNE</div>
-        </button>
+                <div class="ticker hvr-float">SNE</div>
+                          <div class="price">$54.46</div>
+
+              </button>
             </h5>
           </div>
-
           <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
             <div class="card-body">
-              Test
-            </div>
+              <ul id="client-list-ul">
+          <div class="client">Sony</div>
+                <div class="price">$54.46</div>
+                <li>Last Price</li>
+                               <div class="price">-0.50</div>
+
+                <li>Change</li> 
+                               <div class="price">-0.91%</div>
+
+                <li>Percent Change</li> 
+                               <div class="price"> USD</div>
+
+                <li>Currency</li>
+                               <div class="price"> 1:57 PM EDT</div>
+
+                <li>Market Time</li>
+                               <div class="price">611.47k</div>
+
+                <li>Volume</li> 
+                               <div class="price">894.39k</div>
+
+                <li>Avg Vol (3m)</li> 
+                               <div class="price">$54.24</div>
+
+                 <li>52-Wk Low</li> 
+                                <div class="price"> $54.80</div>
+
+                  <li>52-Wk High</li>
+                                 <div class="price">68.07B</div>
+
+                <li>Market Cap</li> 
+<div class="price"> <a href="https://www.nasdaq.com" target="_blank">Trade</div> </a>
+                <li>Buy/Sell</li>             </div>
           </div>
         </div>
 
@@ -283,15 +531,48 @@
           <div class="card-header" id="headingTen">
             <h5 class="mb-0">
               <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-    <div class="ticker hvr-float">NOK</div>
-        </button>
+              <div class="ticker hvr-float">NOK</div>
+                        <div class="price">$5.32</div>
+
+              </button>
             </h5>
           </div>
-
           <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
             <div class="card-body">
-              Test
-            </div>
+              <ul id="client-list-ul">
+          <div class="client">Nikon</div>
+                <div class="price">$5.32</div>
+                <li>Last Price</li> 
+                               <div class="price">-0.04</div>
+
+                <li>Change</li> 
+                               <div class="price">-0.75%</div>
+
+
+                <li>Percent Change</li> 
+                               <div class="price">USD</div>
+
+                <li>Currency</li> 
+                               <div class="price"> 1:57 PM EDT</div>
+
+                <li>Market Time</li>
+                               <div class="price">12.10M</div>
+
+                <li>Volume</li> 
+                               <div class="price"> 15.24M</div>
+
+                <li>Avg Vol (3m)</li>
+                               <div class="price">$4.51</div>
+
+              <li>52-Wk Low</li> 
+                             <div class="price">$6.53</div>
+
+                  <li>52-Wk High</li> 
+                                 <div class="price">29.80B</div>
+
+                <li>Market Cap</li> 
+<div class="price"> <a href="https://www.nasdaq.com" target="_blank">Trade</div> </a>
+                <li>Buy/Sell</li>             </div>
           </div>
         </div>
 
@@ -299,16 +580,47 @@
           <div class="card-header" id="headingEleven">
             <h5 class="mb-0">
               <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-                
-    <div class="ticker hvr-float">INTC</div>
-    </button>
+                <div class="ticker hvr-float">INTC</div>
+                          <div class="price">$49.69</div>
+
+              </button>
             </h5>
           </div>
-
           <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordionExample">
             <div class="card-body">
-              Test
-            </div>
+              <ul id="client-list-ul">
+          <div class="client">Intel Corporation</div>
+                <div class="price">$49.69</div>
+                <li>Last Price</li> 
+                               <div class="price">-0.03</div>
+
+                <li>Change</li> 
+                               <div class="price"> -0.06%</div>
+
+                <li>Percent Change</li>
+                               <div class="price">USD</div>
+
+                <li>Currency</li> 
+                               <div class="price">1:57 PM EDT</div>
+
+                <li>Market Time</li> 
+                               <div class="price">26.66M</div>
+
+                <li>Volume</li> 
+                               <div class="price"> 24.96M</div>
+
+                <li>Avg Vol (3m)</li>
+                               <div class="price">$34.38</div>
+
+            <li>52-Wk Low</li> 
+                           <div class="price">$57.60</div>
+
+                  <li>52-Wk High</li> 
+                                 <div class="price">229.74B</div>
+
+                <li>Market Cap</li> 
+<div class="price"> <a href="https://www.nasdaq.com" target="_blank">Trade</div> </a>
+                <li>Buy/Sell</li>             </div>
           </div>
         </div>
 
@@ -316,104 +628,166 @@
           <div class="card-header" id="headingTwelve">
             <h5 class="mb-0">
               <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
-    <div class="ticker hvr-float">FOXA</div>
-        </button>
+              <div class="ticker hvr-float">FOXA</div>
+                        <div class="price">$45.69</div>
+
+              </button>
             </h5>
           </div>
-
           <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordionExample">
             <div class="card-body">
-              Test
-            </div>
+              <ul id="client-list-ul">
+          <div class="client">Twenty-First Century Fox</div>
+                <div class="price">$45.69</div>
+                <li>Last Price</li> 
+                               <div class="price">+0.27</div>
+                <li>Change</li> 
+                               <div class="price">+0.59%</div>
+                <li>Percent Change</li> 
+                               <div class="price"> USD</div>
+                <li>Currency</li>
+                               <div class="price"> 1:57 PM EDT</div>
+                <li>Market Time</li>
+                               <div class="price">10.25M</div>
+                <li>Volume</li> 
+                               <div class="price">15.65M</div>
+                <li>Avg Vol (3m)</li> 
+                               <div class="price">$24.81</div>
+                <li>52-Wk Low</li> 
+                               <div class="price">$50.15</div>
+                <li>52-Wk High</li> 
+                               <div class="price">84.27B</div>
+                <li>Market Cap</li> 
+<div class="price"> <a href="https://www.nasdaq.com" target="_blank">Trade</div> </a>
+                <li>Buy/Sell</li>             </div>
           </div>
         </div>
-
-
-
       </div>
-
-      <!-- add  news-->
-
-      <!-- Add an about in this section -->
-      <ul id="client-list-ul">
+      
+      
+                  <ul id="client-list-ul">
         <li>
-          <h1>About</h1>
+         <a id=About style= "text-align: center;"> <h1>About</h1></a>
           <p>Finance Solutions is here to optomize your stock data and makes it easier to view, invest, and track all of your stocks to a great investing future.</p>
-        </li>
+   
+
+
+	<div class="container" style="padding: 10px;">
+	  <h1>Portfolio News</h1>
+		<div class="row" style="padding-top: 30px;"><!--Take the padding off-->
+			<div class="col-sm">
+				<div class="card">
+					<img class="card img-top" src="#" alt="">
+					<div class="card-body">
+					  <h1>Why FANG Stocks Might Have Reached a Peak</h1>
+					  <p>Bloomberg Video•August 6, 2018
+Aug.06 -- Ron Josey, JMP Securities managing director, discusses the outlook for FANG stocks with Bloomberg's Emily Chang and Romaine Bostick on "Bloomberg Technology."</p>
+<a href="https://finance.yahoo.com/video/why-fang-stocks-might-reached-233918111.html">Read More Here</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm">
+				<div class="card">
+					<img class="card img-top" src="#" alt="">
+					<div class="card-body">
+					  <h1>Three jurisdictions — and three starkly different tactics — to lure HQ2 with incentives</h1>
+					  <p>Key story highlights: Maryland, Virginia and D.C. have employed different tactics and levels of transparency related to the incentives they will offer Amazon.com Inc. in the race for its second headquarters. While D.C. keeps details of its incentive package under wraps, Virginia requires extensive communication between the legislative and executive branches when approving incentives. Maryland was very public in its approach to incentives, with legislation passed to approve an incentive package worth up to $8.5 billion.</p>
+					  <a href="https://finance.yahoo.com/m/4e4d6aff-a6d4-3b44-8eab-82f224fbd525/ss_three-jurisdictions-%E2%80%94-and.html">Read More Here</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm">
+				<div class="card">
+					<img class="card img-top" src="#" alt="">
+					<div class="card-body">
+					  <h1>Small-Caps Lead Markets on Monday</h1>
+					  <p>The market theme for a while now has been positive action in the indices but choppy action in individual stocks. There hasn't been much consistency from day-to-day but the indices keep chugging along. Despite the strength we still had around 160 stocks hitting new 12-month lows which illustrates the bifurcated nature of the market.</p>
+					  <a href= "https://finance.yahoo.com/m/6e81a238-cb1d-309a-92ff-c2c2dbd47b95/ss_small-caps-lead-markets-on.html">Read More Here</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm">
+				<div class="card">
+					<img class="card img-top" src="#" alt="">
+					<div class="card-body">
+					  <h1>Dow Jones Futures: Apple's Breakout And 23 Reasons To Watch The Market Closely</h1>
+					  <p>Dow Jones futures were little changed Monday morning, along with S&P 500 futures and Nasdaq futures. Last week, the S&P 500 index rose 0.8%. The Nasdaq composite climbed 1%, rebounding from its 50-day moving average. The Dow Jones inched higher. But that</p>
+					  <a href= "https://finance.yahoo.com/m/8bcf72a1-2394-36fa-bac6-2cc27ff5aec6/ss_dow-jones-futures%3A.html">Read More Here</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+     </li>
       </ul>
 
+<!-- Change this to subscribe to our services....maybe-->
+	<h3 id="Newsletter" style="font-family: 'Sedgwick Ave', cursive; text-align: center; color: #a37061">Sign up for our Newsletter to Receive Weekly Ramen Recipes!</h3>
+	<div>
+		<form>
+			<div class="container">
+				<div class="form-group">
+					<div class="form-group col-md-6">
+						<label for="inputName1">First Name</label>
+						<input type="name" class="form-contol" id="inputName1" placeholder="First Name">
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="form-group col-md-6">
+						<label for="inputName2">Last Name</label>
+						<input type="name" class="form-contol" id="inputName2" placeholder="Last Name">
+					</div>
+				</div>
 
-      <ul id="client-list-ul">
-        <li>
-          <div class="ticker hvr-float">FEYE</div>
-          <div class="client">FireEye</div>
-          <div class="price">$14.96</div>
-        </li>
-        <li>
-          <div class="ticker hvr-float">ADBE</div>
-          <div class="client">Adobe</div>
-          <div class="price">$253.28</div>
-        </li>
-        <li>
-          <div class="ticker hvr-float">MKSI</div>
-          <div class="client">MKS Instruments</div>
-          <div class="price">$94.45</div>
-        </li>
-        <li>
-          <div class="ticker hvr-float">AAPL</div>
-          <div class="client">Apple</div>
-          <div class="price">$207.99</div>
-        </li>
-        <li>
-          <div class="ticker hvr-float">TSLA</div>
-          <div class="client">Tesla</div>
-          <div class="price">$348.17</div>
-        </li>
-        <li>
-          <div class="ticker hvr-float">ORCL</div>
-          <div class="client">Oracle</div>
-          <div class="price">$48.47</div>
-        </li>
-        <li>
-          <div class="ticker hvr-float">AMZN</div>
-          <div class="client">Amazon</div>
-          <div class="price">$1,823.29</div>
-        </li>
-        <li>
-          <div class="ticker hvr-float">MSFT</div>
-          <div class="client">Microsoft</div>
-          <div class="price">$108.04</div>
-        </li>
-        <li>
-          <div class="ticker hvr-float">SNE</div>
-          <div class="client">Sony Corporation</div>
-          <div class="price">$54.96</div>
-        </li>
-        <li>
-          <div class="ticker hvr-float">NOK</div>
-          <div class="client">Nikon</div>
-          <div class="price">$5.36</div>
-        </li>
-        <li>
-          <div class="ticker hvr-float">INTC</div>
-          <div class="client">Intel Corporation</div>
-          <div class="price">$49.63</div>
-        </li>
-        <li>
-          <div class="ticker hvr-float">FOXA</div>
-          <div class="client">Twenty-First Century Fox</div>
-          <div class="price">$45.42</div>
-        </li>
+				<div class="form-group">
+					<div class="form-inline">
+						<div class="form-group col-md-6">
+							<label for="inputEmail1">Email </label>
+							<input type="email" class="form-control" id="inputEmail1" placeholder="Email">
+						</div>
+					</div>
+				</div>
+			<!--<div class="form-inline">
+				<label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
+				<div class="col-sm-10">
+					<input type="email" class="form-control" id="colFormLabel" placeholder="Email">
+				</div>
+			</div>-->
+			<div class="form-inline" style="padding: 20px;">
+				<label class="my-1 mr-2" for="inlineFormCustomSelectPref">How did you hear about us?</label>
+				<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+					<option selected>Choose...</option>
+					<option value="1">Sitora's Tokyo Travel Blog</option>
+					<option value="2">CareerDevs</option>
+					<option value="3">Other</option>
+				</select>
+				<div class="custom-control custom-checkbox my-1 mr-sm-2">
+					<input type="checkbox" class="custom-control-input" id="customControlInline">
+					<label class="custom-control-label" for="customControlInline">Remember my preference</label>
+				</div>
+				<div>
+					<button type="submit" class="btn btn-primary my-1">Submit</button>
+					<button type="cancel" class="btn btn-primary">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+</div>
 
-      </ul>
-    </div>
+</body>
 
-
-
-
-
-
-
+<div>
+	<hr>
+	<p style="text-align: center;">If you have any questions of feedback, contact me via twitter below:</p>
+	<a class= "btn btn-outline-info" href="http://twitter.com" role="button" target="_blank" style="display: block;" "justify-content:center;">Twitter</a>
+	<a class="btn btn-outline-info" href="http://google.com" role="button" target="_blank" style="display: block;" "justify-content:center;" "text-align: center;">Need Help?</a>
+</div>
+<div>
+	<br/>
+	<a href="#top" style= "text-align: center; display: block; font-family: 'Abel';">Take me to the top of the page.</a>
+</div>
+<br/>
 
 
 </body>
