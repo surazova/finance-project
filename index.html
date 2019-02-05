@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Flex Walkthrough</title>
+	<!--React Native helps you program in Javascript that makes an app that matches whatever platform you have--> 
+	<!--Framework(like buying an entirely furnished house) vs library(not furnished, you pick, someone builds it)-->
+	<!--Use grid for 2 dimentional projects. Use flex when you're showing off and taking up a lot of space. Grid keeps everything confined and neat--> 
+	<!-- In the () you can put even or odd-->
+	<!--(5, 1fr) is 5 columns, 1 fraction-->
+	<!-- 4oopx is for phones-->
+	<style>
+		header {
+			display: flex;
+		}
+
+		header > div:nth-child(4){ 
+			margin-left: auto;
+		}
+
+		.content {
+			display: grid;
+			grid-template-columns: repeat(5, 1fr);
+		}
+
+		#hello {
+			grid-column: 3;
+		}
+
+		@media (max-width: 400px){
+			.content{
+				grid-template-columns: repeat(1, 1fr);
+			}
+			body{
+				background-color: purple;
+			}
+			div, h1 {
+				color: white;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div>Home</div>
+		<div>Profile</div>
+		<div>Account</div>
+		<div>Logout</div>
+	</header>
+		<div class="content">
+			<h1 id="hello">Helloooooooooooo CareerDevs!</h1>
+		</div>
+		<div class="content">
+			<input type="text" placeholder="First Name" name="fname"> 
+			<input type="email" placeholder="Email" name="email">
+			<input type="date" name="dob">
+			<input type="number" placeholder="Cohort Number" name="cnumber">
+			<input type="submit">
+		</div>
+</body>
+</html> 
